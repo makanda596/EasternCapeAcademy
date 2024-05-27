@@ -486,6 +486,13 @@ h5{
   .med:hover{
     color:rgb(226, 87, 226);
   }
+  .transall{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .img3{
+      margin-top: 40px;
+    }
   }
   
   @media(min-width: 1000px){
@@ -646,5 +653,11 @@ h5{
     .med:hover{
       color:rgb(226, 87, 226);
     }
-    
+    .transall{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .img3{
+      margin-top: 40px;
+    }
   }
