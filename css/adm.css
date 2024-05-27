@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #myBtn {
+    display: flex; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 70px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 9; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:blue;/* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    }
+    #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    }
+  nav{
+    background-color: rgba(165, 42, 42, 0.664);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: rgba(165, 42, 42, 0.664);
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a {
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  h1{
+    background-image: url(../public/geography.jpg );
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    letter-spacing: 1.3px;
+  }
+.text{
+  margin-left: 20px;
+  margin-right: 30px;
+  line-height: 25px;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: Verdana (sans-serif);
+  color: rgba(21, 21, 26, 0.911);
+  font-weight: 400;
+}
+
+.fill{
+  color:blue;
+  margin-left:50px;
+  font-size:26px;
+  font-family: Verdana (sans-serif);
+  font-weight:500;
+  letter-spacing:1.0px;
+}
+.who{
+  color:brown;
+  margin-left:30px;
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:22px;
+  margin-top:20px;
+}
+
+.what{
+  margin-left:30px;
+  color:blue;
+  font-weight:700;
+  font-size:18px;
+}
+
+.details{
+  margin-top:10px;
+  margin-left:30px;
+  margin-bottom:20px;
+  padding:8px 20px;
+  outline:0;
+  width:74%;
+  letter-spacing:1.1px;
+  font-size:14px;
+  color: rgba(21, 21, 26, 0.911);
+  font-family: Verdana (sans-serif);
+  
+}
+
+.details1{
+  margin-top:10px;
+  margin-left:30px;
+  margin-bottom:20px;
+  padding:8px 20px;
+  outline:0;
+  width:74%;
+  letter-spacing:1.5px;
+  font-size:14px;
+  color:white;
+  font-size:16px;
+  font-family: Verdana (sans-serif);
+  background-color:rgba(165, 42, 42, 0.822);
+  padding-bottom:10px
+}
+
+.details:hover{
+  border:1px solid brown;
+}
+.submit{
+  margin-left:60px;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px 14px;
+  background-color:blue;
+  outline:0;
+  border:0;
+  border-radius:6%;
+  color:white;
+  font-size:16px;
+  letter-spacing:1.3px;
+  cursor:pointer;
+  
+}
+.submit:hover{
+  background-color:black;
+}
+.trouble{
+  font-size:20px;
+  letter-spacing:1.8px;
+  line-height:30px;
+  margin-left:30px;
+  margin-right:30px;
+  color: rgba(21, 21, 26, 0.911);
+  font-family: Verdana (sans-serif);
+}
+.map{
+  color:blue;
+  cursor:pointer;
+}
+.map:hover{
+  color: brown;
+}
+a:hover{
+  color:white;
+}
+.last{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  border-top: 2px solid #ccc;
+  background-color: rgba(165, 42, 42, 0.726);
+}
+.lastall{
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.lasttitle{
+  font-size: 16px;
+  font-family: Verdana (sans-serif);
+ color: white;
+  margin-top: 2px; 
+  margin-bottom: 10px;
+}
+.las{
+  list-style: none;
+  color: white;
+margin-left: 2px;
+text-decoration: none;
+font-size: 18px;
+}
+span{
+  color: black;
+}
+.las:hover{
+  color:blue;
+}
+.lastdetails{
+  font-size: 18px;
+  font-family: Verdana (sans-serif);
+  color: white;
+}
+.med{
+ display: none;
+}
+
+.me{
+  border: 0;
+  padding-left: 18px;
+  color: blue;
+  font-size: 20px;
+}
+.me:hover{
+  color:black;
+}
+.med{
+  border: 0;
+  padding-left: 20px;
+  color: blue;
+  font-size: 24px;
+}
+.med:hover{
+  color:black;
+}
+h5{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #332f2fec;
+}
+
+@media(max-width: 700px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display:flex;
+  }
+ 
+
+  }
+  
+
+@media(min-width: 700px){
+  .hideOnMobile{
+    display: flex;
+  }
+  .text{
+    width: 50%;
+    margin-left: 40px;
+  }
+  .fill{
+    margin-left: 90px;
+  }
+  .form{
+    width: 80%;
+    margin-left: 60px;
+    margin-right: 30px;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container{
+    width: 90%;
+  }
+  .trouble{
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  .menu-button{
+    display: none;
+  }
+  .last{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    width: 100%;
+    
+  }
+  h5{
+    margin-left: 100px;
+  }
+  .me{
+    border: 0;
+    padding-left: 20px;
+    color: blue;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .me:hover{
+    color:rgb(226, 87, 226);
+  }
+  .med{
+    border: 0;
+    padding-left: 20px;
+    color: blue;
+    font-size: 24px;
+    display: flex;
+    text-decoration: none;
+  }
+  .med:hover{
+    color:rgb(226, 87, 226);
+  }
+}
+   
+  @media(min-width: 1000px){
+      .sidebar{
+        width: 100%;
+        display: none;
+        background-color: brown;
+      }
+    
+
+    .text{
+      width: 50%;
+      margin-left: 40px;
+    }
+    .fill{
+      margin-left: 110px;
+    }
+    .form{
+      width: 80%;
+      margin-left: 80px;
+      margin-right: 30px;
+    }
+    .content{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+      width: 90%;
+    }
+    .trouble{
+      width: 80%;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    
+    .last{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+    }
+    .lastdetails{
+      font-size: 18px;
+    }
+    .las{
+      font-size: 18px;
+    }
+    h5{
+      margin-left: 40px;
+      bottom: 2px;
+    }
+    .lastall{
+      margin-top: 20px;
+    }
+    .me{
+      border: 0;
+      padding-left: 20px;
+      color: blue;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .me:hover{
+      color: black;
+    }
+    .med{
+      border: 0;
+      padding-left: 20px;
+      color: blue;
+      font-size: 24px;
+      display: flex;
+      text-decoration: none;
+    }
+    .med:hover{
+      color: black;
+    }
+    
+  }
