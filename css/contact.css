@@ -112,7 +112,9 @@
     color: #312d2d;
     margin-top: 8px;
   }
-
+iframe{
+    width: 100%;
+  }
 form{
   padding-top: 30px;
   height: auto;
