@@ -13,7 +13,7 @@ body{
 #myBtn {
   display: flex; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 80px; /* Place the button at the bottom of the page */
   right: 20px; /* Place the button 30px from the right */
   z-index: 9; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -138,6 +138,7 @@ margin-bottom: 20px;
 padding: 12px 20px;
 width: 80%;
 border: 2px solid green;
+border-radius: 8px;
 }
 #lname{
   padding: 12px 20px;
@@ -148,6 +149,7 @@ color: #312d2d;
 font-size: 14px;
 letter-spacing: 1.1px;
 font-family: Verdana (sans-serif);
+border-radius: 8px;
 }
 #tel{padding: 12px 20px;
   width: 80%;
@@ -157,6 +159,7 @@ color: #312d2d;
 font-size: 14px;
 letter-spacing: 1.1px;
 font-family: Verdana (sans-serif);
+border-radius: 8px;
 }
 #email{
   padding: 12px 20px;
@@ -170,6 +173,7 @@ color: #312d2d;
 font-size: 14px;
 letter-spacing: 0.2px;
 font-family: Verdana (sans-serif);
+border-radius: 8px;
 } 
 #subject{
   padding: 12px 20px;
@@ -181,6 +185,7 @@ color: #312d2d;
 font-size: 14px;
 letter-spacing: 1.1px;
 font-family: Verdana (sans-serif);
+border-radius: 8px;
 }
 #message{
 outline: 0;
@@ -213,16 +218,18 @@ border: 2px solid blue;
 border: 2px solid blue;
 }
 .button{
-margin-top: 20px;
+margin-top: 10px;
 background-color: brown;
 margin-left: 20px;
-padding: 10px 24px;
+padding: 10px 6px;
 letter-spacing: 1.1px;
 font-size: 20px;
 color: white;
 border: 0;
+font-weight: 100;
 outline: 0;
 margin-bottom: 20px;
+border-radius: 14px;
 }
 .button:hover{
 cursor: pointer;
