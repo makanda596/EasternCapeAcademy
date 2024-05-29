@@ -1,451 +1,145 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-body{
-  min-height: 100vh;
-  background: url('laptop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#myBtn {
-  display: flex; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 80px; /* Place the button at the bottom of the page */
-  right: 20px; /* Place the button 30px from the right */
-  z-index: 9; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color:blue;/* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  }
-  #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-  }
-nav{
-  background-color: rgba(165, 42, 42, 0.664);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li{
-  height: 50px;
-}
-nav a{
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-nav a:hover{
-  background-color: rgba(165, 42, 42, 0.664);
-}
-nav li:first-child{
-  margin-right: auto;
-}
-a:hover{
-  color:white;
-}
-.sidebar{
-  position: fixed;
-  top: 0; 
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar li{
-  width: 100%;
-}
-.sidebar a{
-  width: 100%;
-}
-.menu-button{ 
-  display: none;
-}
-h1{
-  background-image: url(../public/geography.jpg );
-  background-size: cover;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: white;
-  letter-spacing: 1.3px;
-}
-h2{
-  margin-left: 40px;
-  font-size: 28px;
-  margin-top: 10px;
-  letter-spacing: 1.1px; 
-  font-family: Verdana (sans-serif);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contuct Us</title>
+  <link rel="icon" type="img/pjg" href="../public/logo.PNG">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="./style.css" href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700'>
+  <script src="https://kit.fontawesome.com/7e4c9402a2.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+  <nav> 
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/about.html">About Us</a></li>
+      <li><a href="../pages/adm.html">Admission</a></li>
+      <li><a href="../pages/academics.html">Academics</a></li>
+      <li><a href="../pages/facilities.html">Facilities</a></li>
+      <li><a href="../pages/contact.html">Contuct Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="">EasternCapeAcademy</a></li>
+      <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="../pages/about.html">About Us</a></li></li>
+      <li class="hideOnMobile"><a href="../pages/adm.html">Admission</a></li></li>
+      <li class="hideOnMobile"><a href="../pages/academics.html">Academics</a></li>
+      <li class="hideOnMobile"><a href="../pages/facilities.html">Facilities</a></li>
+      <li class="hideOnMobile"><a href="../pages/contact.html">Contuct Us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <h1>Contuct Us</h1>
+
+  <h2>SEND US A MESSAGE</h2>
+  <p class="mess">Do you have a comment, suggestion, question or a complaint?
+    Fill in the Form below and we will get back to you as soon as we can.We are here 
+    to serve you for better Eastern cape Academy.
+  </p>
+
+  <div class="formmap">
+  <form action="https://api.web3forms.com/submit" method="POST" >
+    <input type="hidden" name="access_key" value="defcf369-5189-444d-9025-fbb065e13b48">
+  <input type="text" name="name" id="fname" placeholder="First Name*" autocomplete="on" required="on" >
+  <input type="text" name="name" id="lname" placeholder="Last Name*" autocomplete="on" required="on" >
+  <input type="email" name="email" id="email" placeholder="Email *" autocomplete="on" required="on" >
+  <input type="number" name="phone number" id="tel" placeholder="Mobile Number *" autocomplete="on" required="on" >
+  <input type="text" name="subject" id="subject" placeholder="subject *" autocomplete="on" required="on" >
+  <textarea type="text" name="message" id="message" placeholder="message*" autocomplete="off" rows="10" cols="40"></textarea><br>
+  <button class="button" type="submit" >Send Message</button>
+</form>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8124017045284!2d37.12897600772028!3d-1.2866239245596023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f65aa4217bc6f%3A0x438b976c8a587dea!2sEastern%20Cape%20Academy%20Ltd!5e0!3m2!1sen!2ske!4v1716548795424!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-1552705b-cfc2-43a1-8c52-a2f88696bc8e" data-elfsight-app-lazy></div>
   
-}
+<div class="last">
+  <div class="lastall">
+    <div class="lasttitle">EASTERN CAPE ACADEMY</div>
+    <p class="lastdetails"><span>Our Vision:</span> To be responsible and accountable members of the society.<br>
+      <span> Our Mission: </span>To provide holistic education for self reliance. </p>
+  </div>
 
-iframe{
-  width: 100%;
-  margin-top: 10px;
-}
-.mess{
-  margin-left: 40px;
-  font-size: 19px; 
-  font-family: Verdana (sans-serif);
-  margin-right: 20px;
-  line-height: 30px;
-  margin-bottom: 20px;
-  letter-spacing: 1.35px;
-  color: #312d2d;
-  margin-top: 8px;
-}
+  <div class="lastall">
+    <div class="lasttitle">QUICK LINKS</div>
+    <p class="lastdetails">
+      <ul >
+        <a class="las"  href="./pages/adm.html">Admission</a> </li><br>
+        <a class="las"   href="./pages/academics.html">Academics</a>  <br>
+        <a class="las" href="./pages/facilities.html">Facilities</a> <br>
+      <a class="las" href="./pages/contact.html">contact us</a> <br>
+      </ul> 
+    </p>
+  </div>
 
-form{
-padding-top: 30px;
-height: auto;
-padding-left: 20px;
-margin-left:20px;
-width:90%;
-box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.288);
-}
-#fname{
-padding: 12px 20px;
-margin-right:10px;
-outline: 0;
-color: #312d2d;
-font-size: 14px;
-letter-spacing: 1.1px;
-font-family: Verdana (sans-serif);
-margin-bottom: 20px;
-padding: 12px 20px;
-width: 80%;
-border: 2px solid green;
-border-radius: 8px;
-}
-#lname{
-  padding: 12px 20px;
-width: 80%;
-border: 2px solid green;
-outline: 0;
-color: #312d2d;
-font-size: 14px;
-letter-spacing: 1.1px;
-font-family: Verdana (sans-serif);
-border-radius: 8px;
-}
-#tel{padding: 12px 20px;
-  width: 80%;
-  border: 2px solid green;
-outline: 0;
-color: #312d2d;
-font-size: 14px;
-letter-spacing: 1.1px;
-font-family: Verdana (sans-serif);
-border-radius: 8px;
-}
-#email{
-  padding: 12px 20px;
-width: 80%;
-margin-bottom: 20px;
-border: 2px solid green;
-margin-right: 10px;
-margin-top: 24px;
-outline: 0;
-color: #312d2d;
-font-size: 14px;
-letter-spacing: 0.2px;
-font-family: Verdana (sans-serif);
-border-radius: 8px;
-} 
-#subject{
-  padding: 12px 20px;
-width: 80%;
-border: 2px solid green;
-outline: 0;
-margin-top: 24px;
-color: #312d2d;
-font-size: 14px;
-letter-spacing: 1.1px;
-font-family: Verdana (sans-serif);
-border-radius: 8px;
-}
-#message{
-outline: 0;
-margin-top: 24px;
-color: #312d2d;
-font-size: 16px;
-letter-spacing: 1.1px;
-width: 80%;
-font-family: Verdana (sans-serif);
-padding: 10px 16px;
-height: auto;
-border: 2px solid green;
-}
-#message:hover{
-border: 2px solid blue;
-}
-#fname:hover{
-border: 2px solid blue;
-}
-#lname:hover{
-border: 2px solid blue;
-}
-#subject:hover{
-border: 2px solid blue;
-}
-#tel:hover{
-border: 2px solid blue;
-}
-#email:hover{
-border: 2px solid blue;
-}
-.button{
-margin-top: 10px;
-background-color: brown;
-margin-left: 20px;
-padding: 10px 6px;
-letter-spacing: 1.1px;
-font-size: 20px;
-color: white;
-border: 0;
-font-weight: 100;
-outline: 0;
-margin-bottom: 20px;
-border-radius: 14px;
-}
-.button:hover{
-cursor: pointer;
-background-color: blue;
-}
+  <div class="lastall">
+    <div class="lasttitle">CONTUCT US</div>
+    <p class="lastdetails">Call us on +254-712-253-376 <br>EasternCapeAcademy@gmail.com 
+    </p>
+    <a class="me" href="https://wa.me/+254712253376"> <i class="fa-brands fa-whatsapp"></i></a>
+      <a class="me" target="_blank" href=""><i class="fa-brands fa-square-instagram"></i></a> 
+     <a class="me" href="https://www.youtube.com/results?search_query=eastern+cape+academy+kenyah" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <div class="lastall">
+    <div class="lasttitle">FOLLOW US</div>
+    
+    <a class="me" href="https://wa.me/+254712253376"> <i class="fa-brands fa-whatsapp"></i></a>
+      <a class="me" target="_blank" href="https://www.instagram.com/ndl_s_africa?igsh=MW4xMTl4MXFqejJnbw=="><i class="fa-brands fa-square-instagram"></i></a> 
+     <a class="me" href="https://www.youtube.com/results?search_query=eastern+cape+academy+kenya" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <h5>&copy; 2024 EasternCapeAcademy.All Rights Reserved</h5>
+</div>
 
-.last{
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-margin-top: 30px;
-width: 100%;
-height: auto;
-padding-top: 20px;
-border-top: 2px solid #ccc;
-background-color: rgba(165, 42, 42, 0.726);
-}
-.lastall{
-margin-left: 40px;
-margin-bottom: 40px;
-}
-.lasttitle{
-font-size: 16px;
-font-family: Verdana (sans-serif);
-color: white;
-margin-top: 2px; 
-margin-bottom: 10px;
-}
-.las{
-list-style: none;
-color: white;
-margin-left: 2px;
-text-decoration: none;
-font-size: 18px;
-}
-span{
-color: black;
-}
-.las:hover{
-color:blue;
-}
-.lastdetails{
-font-size: 18px;
-font-family: Verdana (sans-serif);
-color: white;
-}
-.med{
-display: none;
-}
 
-.me{
-border: 0;
-padding-left: 18px;
-color: blue;
-font-size: 20px;
-}
-.me:hover{
-color:rgb(226, 87, 226);
-}
-.med{
-border: 0;
-padding-left: 20px;
-color: blue;
-font-size: 24px;
-}
-.med:hover{
-color:black;
-}
-h5{
-margin-left: 20px;
-margin-bottom: 20px;
-color: #332f2fec;
-}
-
-@media(max-width: 700px){
-  .hideOnMobile{
-    display: none;
-  }
-  .menu-button{
-    display: flex;
-  }
-
-}
-
-@media(min-width: 700px){
- 
-  .menu-button{
-    display: none;
-  }
- 
-
-#fname{
-  padding: 12px 60px;
-  width: 30%;
-}
-#lname{
-  padding: 12px 60px;
-  width: 30%;
-}
-#email{
-  padding: 12px 60px;
-  width: 30%;
-}
-#tel{
-  padding: 12px 60px;
-  width: 30%;
-}
-.last{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 30px;
-  width: 100%;
-  
-}
-h5{
-  margin-left: 100px;
-}
-.me{
-  border: 0;
-  padding-left: 20px;
-  color: blue;
-  text-decoration: none;
-  font-size: 24px;
-}
-.me:hover{
-  color:rgb(226, 87, 226);
-}
-.med{
-  border: 0;
-  padding-left: 20px;
-  color: blue;
-  font-size: 24px;
-  display: flex;
-  text-decoration: none;
-}
-.med:hover{
-  color:rgb(226, 87, 226);
-}
-}
-
-@media(min-width: 1000px){
-
-  .menu-button{
-    display: none;
-  }
-  .formmap{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  form{
-    width: 100%;
-    box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.075);
-  }
-  iframe{
-    width: 90%;
-    margin-left: 50px;
-    height: 600px;
-    box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.192);
-  }
    
-#fname{
-  padding: 12px 10px;
-  width: 40%;
-}
-#lname{
 
-  padding: 12px 10px;
-  width: 40%;
-}
-#email{
-  padding: 12px 10px;
-  width: 40%;
-}
-#tel{
-  padding: 12px 10px;
-  width: 40%;
-}
-  .last{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-  }
-  .lastdetails{
-    font-size: 18px;
-  }
-  .las{
-    font-size: 18px;
-  }
-  h5{
-    margin-left: 40px;
-    bottom: 2px;
-  }
-  .lastall{
-    margin-top: 20px;
-  }
-  .me{
-    border: 0;
-    padding-left: 20px;
-    color: blue;
-    text-decoration: none;
-    font-size: 24px;
-  }
-  .me:hover{
-    color:rgb(226, 87, 226);
-  }
-  .med{
-    border: 0;
-    padding-left: 20px;
-    color: blue;
-    font-size: 24px;
-    display: flex;
-    text-decoration: none;
-  }
-  .med:hover{
-    color:rgb(226, 87, 226);
-  }
-  
-}
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+  </script>
+</body>
+</html>
