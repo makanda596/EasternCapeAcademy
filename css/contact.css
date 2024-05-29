@@ -80,7 +80,7 @@
   .sidebar a{
     width: 100%;
   }
-  .menu-button{
+  .menu-button{ 
     display: none;
   }
   h1{
@@ -101,6 +101,9 @@
     
   }
 
+  iframe{
+    width: 100%;
+  }
   .mess{
     margin-left: 40px;
     font-size: 19px; 
@@ -112,15 +115,13 @@
     color: #312d2d;
     margin-top: 8px;
   }
-iframe{
-    width: 100%;
-  }
+
 form{
   padding-top: 30px;
   height: auto;
   padding-left: 20px;
-    margin-left:100px;
-    width:90%;
+  margin-left:10px;
+  width:90%;
 }
 #fname{
   padding: 12px 8px;
