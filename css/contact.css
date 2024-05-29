@@ -121,10 +121,9 @@ form{
 padding-top: 30px;
 height: auto;
 padding-left: 20px;
-margin-left:10px;
+margin-left:20px;
 width:90%;
-border-top: 2px solid brown;
-border-bottom: 2px solid brown;
+box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.288);
 }
 #fname{
 padding: 12px 20px;
@@ -318,7 +317,8 @@ color: #332f2fec;
   .menu-button{
     display: none;
   }
-  
+ 
+
 #fname{
   padding: 12px 60px;
   width: 30%;
@@ -373,7 +373,39 @@ h5{
   .menu-button{
     display: none;
   }
-  
+  .formmap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form{
+    width: 100%;
+    box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.075);
+  }
+  iframe{
+    width: 90%;
+    margin-left: 50px;
+    height: 600px;
+    box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.192);
+  }
+   
+#fname{
+  padding: 12px 10px;
+  width: 40%;
+}
+#lname{
+
+  padding: 12px 10px;
+  width: 40%;
+}
+#email{
+  padding: 12px 10px;
+  width: 40%;
+}
+#tel{
+  padding: 12px 10px;
+  width: 40%;
+}
   .last{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
