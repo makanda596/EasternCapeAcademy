@@ -318,7 +318,9 @@ color: #332f2fec;
     display: none;
   }
  
-
+.button{
+  margin-top: 40px;
+}
 #fname{
   padding: 12px 60px;
   width: 30%;
