@@ -124,13 +124,15 @@ form{
   width:90%;
 }
 #fname{
-  padding: 12px 8px;
+  padding: 12px 60px;
   margin-right:10px;
   outline: 0;
   color: #312d2d;
   font-size: 14px;
   letter-spacing: 1.1px;
   font-family: Verdana (sans-serif);
+  margin-bottom: 20px;
+  width: 60%;
 }
 #lname{
   padding: 12px 12px;
