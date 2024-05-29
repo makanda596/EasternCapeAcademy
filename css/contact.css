@@ -191,6 +191,7 @@ letter-spacing: 1.1px;
 width: 80%;
 font-family: Verdana (sans-serif);
 padding: 10px 16px;
+height: auto;
 border: 2px solid green;
 }
 #message:hover{
