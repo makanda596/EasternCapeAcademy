@@ -44,7 +44,7 @@
   }
   nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 30px; 
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -243,6 +243,74 @@ h3{
   margin-left: 10px;
   margin-right: 20px;
   margin-bottom: 30px;
+}
+.sideall{
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+   margin-left: 20px;
+   width: 80%;
+   padding: 20px 14px;
+   
+}
+h12{
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+}
+.sidecontact{
+ background-color: brown;
+  height: 200px;
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.fa-solid{
+  color: yellow;
+  padding: 2px 2px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sidedetails{
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  width: 83%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.sidetel{
+  text-decoration: none;
+  padding:8px 14px ;
+  letter-spacing: 0.8px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+ 
+}
+.sidetel:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+
+.sidefee{
+  margin-top: 30px;
+   margin-bottom: 20px;
+  background-color: blue;
+  width: 76%;
+  padding: 10px 24px;
+}
+.sidefee:hover{
+  cursor: pointer;
+   background-color:brown;
+}
+
+.fee{
+  color: white;
+text-decoration: none;
+margin-left: 4px;
 }
 .head{
   float: left;
