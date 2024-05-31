@@ -237,7 +237,7 @@ h3{
 .group{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .groupall{
   margin-left: 10px;
@@ -482,6 +482,7 @@ h5{
   .img1{
     text-align: center;
   }
+
   .vi{
     width:40%;
     padding-left:10px;
@@ -506,6 +507,27 @@ h3{
   }
   .groupall{
     margin-left: 30px;
+  }
+  .sideall{
+    float: right;
+    width: 36%;
+    padding-top: 0px;
+     box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.288);
+    margin-right: 8px;
+    padding-top: 10px;
+   padding-left: 40px;
+   padding-right: 2px;
+  }
+  .sidefee{
+    margin-top: 2px;
+    width: 70%;
+    
+  }
+  .sidecontact{
+    margin-bottom: 10px;
+    width: 74%;
+    height: 220px;
+    padding-top: 6px;
   }
   .img4{
     width: 40%;
@@ -622,6 +644,19 @@ margin-top: 30px;
   width: 50%;
   margin-right: 30px;
 }
+.sideall{
+  width: 30%;
+  padding-left: 70px;
+  float: right;
+  margin-right: 40px;
+}
+ .sidefee{
+    width:60%;
+    
+  }
+  .sidecontact{
+ width:64%;
+  }
 .groupall{
   margin-left: 30px;
 }
