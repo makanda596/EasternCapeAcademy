@@ -18,8 +18,8 @@
     z-index: 9; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color:blue;/* Set a background color */
-    color: red; /* Text color */
+    background-color:white;/* Set a background color */
+    color: blue; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 6px 12px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -330,15 +330,9 @@ h12{
 .sidecontact{
  background-color: brown;
   height: 220px;
-  width: 80%;
+  width: 82%;
   padding-top: 30px;
   padding-left: 30px;
-}
-.fa-solid{
-  color: yellow;
-  padding: 2px 2px;
-  border-radius: 4px;
-  font-size: 16px; 
 }
 
 .sidedetails{
