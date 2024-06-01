@@ -10,58 +10,155 @@
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  nav{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  }
-  nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav li{
-    height: 50px;
-  }
-  nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-  nav a:hover{
-    background-color: #f0f0f0;
-  }
-  nav li:first-child{
-    margin-right: auto;
-  }
-  .sidebar{
-    position: fixed;
-    top: 0; 
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .sidebar li{
-    width: 100%;
-  }
-  .sidebar a{
-    width: 100%;
-  }
-  .menu-button{
-    display: none;
-  }
+     #myBtn {
+        display: flex; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 70px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        z-index: 9; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color:white;/* Set a background color */
+        color: blue; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 6px 12px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 22px; /* Increase font size */
+        
+        }
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        }
+        nav{
+        
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        }
+        
+        nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+        nav li{
+        height: 50px;
+        
+        }
+        nav a{
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        }
+        nav a:hover{
+        background-color: rgba(165, 42, 42, 0.664);
+        }
+        nav li:first-child{
+        margin-right: auto;
+        cursor: none;
+        }
+        .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 255, 0.932);
+        width: 100%;
+        backdrop-filter: blur(12px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        
+        }
+        .sidebar li{
+        width: 100%;
+        }
+        
+        .sidebar a{
+        width: 100%;
+        }
+        .menu-button{
+        display: none;
+        }
+        .lastlo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        }
+        .lo{
+        width: 44%;
+        margin-left: 30px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        }
+        .firstlo{
+        width:16%;
+        }
+        .menu-button{
+        display: none;
+        }
+        h5{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        color:black;
+        }
+        .lasttitle1{
+        font-size: 16px;
+        font-family: Verdana (sans-serif);
+        color:white;
+        margin-top: 26px;
+        margin-bottom: 8px;
+        }
+        .mediatop{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        }
+        .topmed{
+        color:red;
+        font-size: 22px;
+        background-color: blue;
+        margin-right: 6px;
+        padding-left: 2px;
+        width: 70%;
+        padding-right: 2px;
+        border-radius: 4px;
+        }
+h5{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color:black;
+}
+.lasttitle1{
+  font-size: 16px;
+  font-family: Verdana (sans-serif);
+ color:white;
+  margin-top: 26px; 
+  margin-bottom: 8px;
+}
+.mediatop{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.topmed{
+  color:red;
+    font-size: 22px;
+    background-color: blue;
+    margin-right: 6px;
+    padding-left: 2px;
+    width: 70%;
+    padding-right: 2px;
+    border-radius: 4px;
+}
   h1{
     background-image: url(../public/geography.jpg );
     background-size: cover;
@@ -113,22 +210,30 @@
 }
 .time{
     font-family: Verdana (sans-serif);
-    color:#1d1c1c;  
+    color:brown;  
+    font-weight: 500;  
+    font-size: 18px;
     margin-bottom: 4px;  
 }
 .location{
     font-family: Verdana (sans-serif);
-    color:#ee0d0d;  
+    color:blue;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    font-weight: 500;  
     margin-bottom: 4px;  
-    font-weight: 400;
 }
 .details{
     font-family: Verdana (sans-serif);
-    color:#3a3838;  
+    color:#111010;  
     margin-bottom: 4px; 
     font-weight: 400;
     font-size: 18px;
     width: 90%;
+    font-size: 19px;
+    letter-spacing: 1.8px;
+    
+    line-height: 20px;
 }
 
 .last{
@@ -169,9 +274,9 @@ span{
   font-size: 18px;
   font-family: Verdana (sans-serif);
   color: white;
-}
+} 
 .med{
- display: none;
+ display: flex;
 }
 
 .me{
@@ -184,14 +289,12 @@ span{
   color:black;
 }
 .med{
-  border: 0;
+  border: 0; 
   padding-left: 20px;
-  color: blue;
+  color:blue;
   font-size: 24px;
 }
-.med:hover{
-  color:rgb(226, 87, 226);
-}
+
 h5{
   margin-left: 20px;
   margin-bottom: 20px;
@@ -203,16 +306,50 @@ h5{
 
 
 
-  @media(max-width: 800px){
+  @media(max-width: 700px){
     .hideOnMobile{
       display: none;
     }
     .menu-button{
-      display: block;
+      display:flex;
     }
-  }
-  @media(max-width: 400px){
-    .sidebar{
-      width: 100%;
+   
+  
     }
+    
+  
+  @media(min-width: 700px){
+    .hideOnMobile{
+      display: flex;
+    }
+    .menu-button{
+      display: none;
+    }
+   nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+     color: black;
+     font-size: 18px;
   }
+  .firstlo{
+    margin-left: 20px;
+    width: 30%;
+  }
+  .event{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  }
+     @media(min-width: 1000px){
+      .sidebar{
+        width: 100%;
+        display: none;
+        background-color: brown;
+      }
+      .firstlo{
+        width:16%;
+      }
+    }
