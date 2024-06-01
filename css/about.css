@@ -311,7 +311,7 @@ h3{
 .groupall{
   margin-left: 10px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 .sideall{
   display: grid;
@@ -360,7 +360,7 @@ h12{
 }
 
 .sidefee{
-  margin-top: 30px;
+  margin-top: 20px;
    margin-bottom: 20px;
   background-color: blue;
   width: 76%;
