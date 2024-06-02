@@ -10,79 +10,129 @@ body{
   background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#myBtn {
-  display: flex; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 80px; /* Place the button at the bottom of the page */
-  right: 20px; /* Place the button 30px from the right */
-  z-index: 9; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color:blue;/* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  }
-  #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-  }
-nav{
-  background-color: rgba(165, 42, 42, 0.664);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li{
-  height: 50px;
-}
-nav a{
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-nav a:hover{
-  background-color: rgba(165, 42, 42, 0.664);
-}
-nav li:first-child{
-  margin-right: auto;
-}
-a:hover{
-  color:white;
-}
-.sidebar{
-  position: fixed;
-  top: 0; 
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar li{
-  width: 100%;
-}
-.sidebar a{
-  width: 100%;
-}
-.menu-button{ 
-  display: none;
-}
+       #myBtn {
+        display: flex; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 70px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        z-index: 9; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color:white;/* Set a background color */
+        color: blue; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 6px 12px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 22px; /* Increase font size */
+        
+        }
+        #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+        }
+        nav{
+        
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        }
+        
+        nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+        nav li{
+        height: 50px;
+        
+        }
+        nav a{
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        }
+        nav a:hover{
+        background-color: rgba(165, 42, 42, 0.664);
+        }
+        nav li:first-child{
+        margin-right: auto;
+        cursor: none;
+        }
+        .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 255, 0.932);
+        width: 100%;
+        backdrop-filter: blur(12px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+        
+        }
+        .sidebar li{
+        width: 100%;
+        }
+        
+        .sidebar a{
+        width: 100%;
+        }
+        .menu-button{
+        display: none;
+        }
+        .lastlo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        }
+        .lo{
+        width: 44%;
+        margin-left: 30px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        }
+        .firstlo{
+        width:16%;
+        }
+        .menu-button{
+        display: none;
+        }
+        h5{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        color:black;
+        }
+        .lasttitle1{
+        font-size: 16px;
+        font-family: Verdana (sans-serif);
+        color:white;
+        margin-top: 26px;
+        margin-bottom: 8px;
+        }
+        .mediatop{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        }
+        .topmed{
+        color:red;
+        font-size: 22px;
+        background-color: blue;
+        margin-right: 6px;
+        padding-left: 2px;
+        width: 70%;
+        padding-right: 2px;
+        border-radius: 4px;
+        }
 h1{
   background-image: url(../public/geography.jpg );
   background-size: cover;
@@ -124,7 +174,7 @@ padding-left: 14px;
 margin-left:20px;
 width:80%;
 box-shadow:2px 2px 8px 10px rgba(0, 0, 0, 0.288);
-}
+} 
 #fname{
 padding: 12px 20px;
 margin-right:10px;
@@ -229,6 +279,7 @@ font-weight: 100;
 outline: 0;
 margin-bottom: 20px;
 border-radius: 14px;
+
 }
 .button:hover{
 cursor: pointer;
@@ -317,7 +368,19 @@ color: #332f2fec;
   .menu-button{
     display: none;
   }
- 
+ nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+     color: black;
+     font-size: 18px;
+  }
+  .firstlo{
+    margin-left: 20px;
+    width: 30%;
+  }
 .button{
   margin-top: 40px;
 }
@@ -375,6 +438,9 @@ h5{
   .menu-button{
     display: none;
   }
+   .firstlo{
+        width:16%;
+      }
   .formmap{
     width: 100%;
     display: grid;
