@@ -10,7 +10,8 @@
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  #myBtn {
+  
+    #myBtn {
     display: flex; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 70px; /* Place the button at the bottom of the page */
@@ -52,7 +53,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-       color: black;
+     color: black;
      font-size: 24px;
   }
   nav a:hover{
@@ -76,8 +77,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
-    
   }
   .sidebar li{
     width: 100%;
@@ -112,13 +111,7 @@ h5{
   margin-bottom: 10px;
   color:black;
 }
-.lasttitle1{
-  font-size: 16px;
-  font-family: Verdana (sans-serif);
- color:white;
-  margin-top: 26px; 
-  margin-bottom: 8px;
-}
+
 .mediatop{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -133,7 +126,9 @@ h5{
     padding-right: 2px;
     border-radius: 4px;
 }
-
+.lasttitle1{
+  color: white;
+}
 h1{
   background-image: url(../public/geography.jpg );
   background-size: cover;
@@ -405,7 +400,7 @@ h5{
       padding-left: 20px;
       color: blue;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 24px; 
     }
     .me:hover{
       color:rgb(226, 87, 226);
