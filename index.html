@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./style.css" href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700'>
   <script src="https://kit.fontawesome.com/7e4c9402a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <script  src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   <div class="elfsight-app-1552705b-cfc2-43a1-8c52-a2f88696bc8e" data-elfsight-app-lazy></div>
+ 
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
   <nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
@@ -59,12 +60,16 @@
           </svg></a></li>
     </ul>
   </nav>
-  <h1>Eastern Cape Academy</h1>
+  <h1>Eastern Cape Academy</h1><br>
 <h2>WELCOME</h2>
+<h6>"The more that you read, the more things you will know. The more that you learn, the more places you'll go."
+
+- Dr. Seuss</h6>
+
 <div class="homepage">
 
   <div class="homeall">
-<img class="home" src="./public/school.avif" >
+<img class="home" src="./public/school.avif"  data-aos="fade-right" >
 
 <div class="homeone">
 <h3>About Us</h3>
@@ -75,8 +80,8 @@
   <p class="more"><a class="re" href="pages/about.html">Read More</a> </p></div>
 </div>
 
-<div class="homeall">
-  <img src="public/sch.avif" class="home">
+<div class="homeall"  d>
+  <img src="public/sch.avif" class="home" data-aos="fade-right">
   
   <div class="homeone">
     <h3>ACADEMICS</h3>
@@ -90,28 +95,29 @@
       </div>
       <h6>YOUR CAREER BEGINS HERE </h6>
       <div class="future">
-        <div class="future1">
-          <img src="./public/logo.PNG" width="20%"><br>
-          <div class="fut">Honesty</div>
-          <p class="future2">we are committed to being trustworthy and transparent to our undertakings.</p>
+        <div class="future1" >
+          <img src="./public/logo.PNG" width="20%"  data-aos="fade-up"><br>
+          <div class="fut"  data-aos="fade-up">Honesty</div>
+          <p class="future2"  data-aos="fade-up">we are committed to being trustworthy and transparent to our undertakings.</p>
+        </div>
+      
+        <div class="future1"  >
+          <img src="./public/logo.PNG" width="20%" data-aos="fade-up"><br>
+          <div class="fut" data-aos="fade-up">Cutersy</div>
+          <p class="future2" data-aos="fade-up">we endeavor to be courteous all the time to every person.</p>
         </div>
       
         <div class="future1">
-          <img src="./public/logo.PNG" width="20%"><br>
-          <div class="fut">Cutersy</div>
-          <p class="future2">we endeavor to be courteous all the time to every person.</p>
-        </div>
-      
-        <div class="future1">
-          <img src="./public/logo.PNG" width="20%"><br>
-          <div class="fut">TeamWork</div>
-          <p class="future2">We cherish teamwork within our
+          <img src="./public/logo.PNG" width="20%"  data-aos="fade-up"> <br>
+          <div class="fut" data-aos="fade-up">TeamWork</div>
+          <p class="future2"  data-aos="fade-up">We cherish teamwork within our
             institution and with all our teachers and studets in our school.</p>
         </div>
-        <div class="future1">
-          <img src="./public/logo.PNG" width="20%"><br>
-          <div class="fut">Continual Improvement </div>
-          <p class="future2">we are committed to maintaining high
+
+        <div class="future1" >
+          <img src="./public/logo.PNG" width="20%"  data-aos="fade-up" ><br>
+          <div class="fut"  data-aos="fade-up">Continual Improvement </div>
+          <p class="future2"  data-aos="fade-up">we are committed to maintaining high
             standards of academic performance .</p>
         </div>
       </div>
@@ -120,12 +126,12 @@
   <div class="transall">
     <div class="trans">
       <h6>WE OFFER TRANSPORTATION FOR OUR STUDENTS </h6>
-      <img src="./public/transport.webp" loading="lazy" class="img3">
+      <img src="./public/transport.webp" loading="lazy" class="img3" >
     </div>
 
     <div class="trans">
       <h6>EASTERN CAPE COMMUNITY</h6>
-      <img src="./public/chil.avif" loading="lazy" class="img3">
+      <img src="./public/chil.avif" loading="lazy" class="img3" >
     </div>
   </div>
 <div class="board">
@@ -184,19 +190,19 @@
 
 
 <div class="rates">
-  <div class="rate">
+  <div class="rate"  data-aos="fade-right">
   <div class="ratesn">1000+</div>
   <div class="ratesd">ENROLLED STUDENTS</div></div>
 
-  <div class="rate">
+  <div class="rate " data-aos="fade-right">
   <div class="ratesn">34</div>
   <div class="ratesd">QUALIFIED TEACHERS</div></div>
 
-  <div class="rate">
+  <div class="rate" data-aos="fade-right">
   <div class="ratesn">40</div>
   <div class="ratesd">LESSONS</div></div>
 
-  <div class="rate">
+  <div class="rate" data-aos="fade-right">
   <div class="ratesn">24</div>
   <div class="ratesd">VIDEOS</div></div>
 </div>
@@ -247,8 +253,16 @@ class="fa-brands fa-square-instagram"></i></a>
 </div>
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:100,
+      duration:900,
+    });
+  </script>
 
   <script>
+    
     function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'flex'
